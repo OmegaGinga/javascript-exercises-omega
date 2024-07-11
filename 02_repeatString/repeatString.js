@@ -1,4 +1,11 @@
-const repeatString = function() {
+const repeatString = function(text, times) {
+    let outPut = "";
+
+    for(let i = 1; i <= times; i++){
+        outPut += text;
+    }
+
+    return outPut;
 
 };
 
