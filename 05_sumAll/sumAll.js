@@ -23,9 +23,11 @@ const sumAll = function(number1, number2) {
 };
 
 function isString(value){
-    return typeof value === 'string';
+    if(typeof value != 'number'){
+        return true;
+    }
 }
 
-console.log(sumAll(1,12));
+console.log(sumAll(12,1));
 // Do not edit below this line
 module.exports = sumAll;
