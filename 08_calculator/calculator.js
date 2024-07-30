@@ -14,10 +14,10 @@ const sum = function(array) {
 if(array.length === 0){
   return 0;
 }else{
-  array.reduce((total, item)=>{
+  return array.reduce((total, item)=>{
     return total + item;
   }, 0)
-}
+};
 	
 };
 
