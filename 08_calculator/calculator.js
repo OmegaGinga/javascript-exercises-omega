@@ -29,10 +29,17 @@ const multiply = function(array) {
       return total*item;
     })
   }
-
 };
 
-const power = function() {
+// Pow is multiply 
+const power = function(n1,n2) {
+  let total = 1;
+  let base = n1;
+  // 4* 4 * 4
+  for(let i = 0; i<n2;i++){
+    total *= base;
+  }
+  return total;
 	
 };
 
