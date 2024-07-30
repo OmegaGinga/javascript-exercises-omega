@@ -43,7 +43,15 @@ const power = function(n1,n2) {
 	
 };
 
-const factorial = function() {
+const factorial = function(n) {
+  if(n === 0){
+    return 1;
+  }
+  let total = 0;
+  for(let i = n; i > 0; i--){
+    total += i;
+  }  
+  return total;
 	
 };
 
