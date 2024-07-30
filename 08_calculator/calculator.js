@@ -9,7 +9,15 @@ const subtract = function(n1,n2) {
 	
 };
 
-const sum = function() {
+const sum = function(array) {
+
+if(array.length === 0){
+  return 0;
+}else{
+  array.reduce((total, item)=>{
+    return total + item;
+  }, 0)
+}
 	
 };
 
