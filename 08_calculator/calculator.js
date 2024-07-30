@@ -21,7 +21,14 @@ if(array.length === 0){
 	
 };
 
-const multiply = function() {
+const multiply = function(array) {
+  if(array.length === 0){
+    return 0;
+  }else{
+    return array.reduce((total, item)=>{
+      return total*item;
+    })
+  }
 
 };
 
