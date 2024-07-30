@@ -47,9 +47,9 @@ const factorial = function(n) {
   if(n === 0){
     return 1;
   }
-  let total = 0;
+  let total = 1;
   for(let i = n; i > 0; i--){
-    total += i;
+    total *= i;
   }  
   return total;
 	
