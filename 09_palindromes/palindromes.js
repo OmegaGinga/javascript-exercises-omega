@@ -1,8 +1,9 @@
 const palindromes = function (word) {
 
-    word = word.toLowerCase();
-    let new_word = '';
+    word = word.toLowerCase();        
     word = word.replace(/[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g,'');
+    word = word.replaceAll(' ','');
+    let new_word = '';  
     for(let i = word.length-1; i>=0;i--){
 
         new_word+=word[i];
@@ -15,6 +16,7 @@ const palindromes = function (word) {
     }
 
 };
+
 
 // Do not edit below this line
 module.exports = palindromes;
